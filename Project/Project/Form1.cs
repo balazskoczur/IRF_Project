@@ -16,12 +16,17 @@ namespace Project
         public Form1()
         {
             InitializeComponent();
-            DataSet ds = new DataSet();
-            ds.ReadXml("C:/Users/balaz/source/repos/IRF_Project/Project/Project/xml/dataDec-15-2020.xml");
-            ds.WriteXml("test.xml");
+
 
             
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            ds.ReadXml("C:/Users/balaz/source/repos/IRF_Project/Project/Project/xml/dataDec-15-2020.xml");
+            ds.WriteXml("test.xml");
         }
     }
 }
