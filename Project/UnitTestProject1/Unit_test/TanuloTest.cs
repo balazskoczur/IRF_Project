@@ -13,6 +13,7 @@ namespace UnitTestProject1.Unit_test
         [Fact]
         public void TanuloTestSucces()
         {
+            //megnézem, hogy az adott teszteset működik-e (Béla, 20, B1TM4N)
             string name = "Béla";
             int age = 20;
             string neptun = "B1TM4N";
@@ -26,6 +27,7 @@ namespace UnitTestProject1.Unit_test
         [Fact]
         public void TanuloTestException()
         {
+            // megnézem, dob-e hibát ott, ahol a tanuló osztályban Regex-szel meghatároztam, hogy milyen legyen a neptunkód
             Tanulo student;
             Assert.ThrowsException<ArgumentException>(() => student = new Tanulo("Cecil", 42, "Cecil.42"));
         }
