@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.csv;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,9 +15,13 @@ namespace Project
     public partial class Form1 : Form
     {
         Random rnd = new Random();
+        DataBase dt = new DataBase();
         public Form1()
         {
             InitializeComponent();
+
+            
+            dataGridView1.DataSource = dt;
 
             timer1.Interval = 5000;
             timer1.Enabled = true;
@@ -24,18 +29,16 @@ namespace Project
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
             ds.ReadXml("C:/Users/balaz/source/repos/IRF_Project/Project/Project/xml/dataDec-15-2020.xml");
             ds.WriteXml("test.xml");
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'database1DataSet1.Table' table. You can move, or remove it, as needed.
-            this.tableTableAdapter.Fill(this.database1DataSet1.Table);
-
         }
 
         private void button2_Click(object sender, EventArgs e)
