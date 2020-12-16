@@ -15,12 +15,12 @@ namespace Project
     public partial class Form1 : Form
     {
         Random rnd = new Random();
-        DataBase dt = new DataBase();
         public Form1()
         {
             InitializeComponent();
 
-            
+
+            DataTable dt = OperationsUtility.CreateDataTable();
             dataGridView1.DataSource = dt;
 
             timer1.Interval = 5000;
@@ -38,12 +38,13 @@ namespace Project
         {
             DataSet ds = new DataSet();
             ds.ReadXml("C:/Users/balaz/source/repos/IRF_Project/Project/Project/xml/dataDec-15-2020.xml");
-            ds.WriteXml("test.xml");
+            ds.WriteXml("test.xlsx");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            DataTable dt = OperationsUtility.CreateDataTable();
+            dt.ToCSV("test2.csv");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
