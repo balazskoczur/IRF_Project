@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Project
 {
@@ -15,6 +16,12 @@ namespace Project
         public Form1()
         {
             InitializeComponent();
+            XmlTextReader reader = new XmlTextReader("dataDec-15-2020.xml");
+            while (reader.Read())
+            {
+                Console.WriteLine(reader.Name);
+            }
+            Console.ReadLine();
         }
     }
 }
