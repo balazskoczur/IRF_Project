@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.csv
 {
+    //streamwriterrel csv írás
     public static class CSVUtility
     {
         public static void ToCSV(this DataTable dtDataTable, string strFilePath)

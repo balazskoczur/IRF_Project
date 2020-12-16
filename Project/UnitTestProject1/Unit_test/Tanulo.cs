@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace UnitTestProject1.Unit_test
 {
+    //tanuló osztály, amit tudok Unit testelni
     public class Tanulo
     {
         public string NeptunCode;

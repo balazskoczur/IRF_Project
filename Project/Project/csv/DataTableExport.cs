@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project.csv
 {
+    //egy adattábla létrehozása
     public static class OperationsUtility
     {
         public static DataTable CreateDataTable()

@@ -74,7 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="csv\CSVUtility.cs" />
-    <Compile Include="csv\DataBase.cs" />
     <Compile Include="csv\DataTableExport.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -8,6 +8,7 @@ using Xunit;
 
 namespace UnitTestProject1.Unit_test
 {
+    //Unit testelő osztály
     public class TanuloTest
     {
         [Fact]

@@ -18,22 +18,22 @@ namespace Project
         public Form1()
         {
             InitializeComponent();
-
-
+            this.BackColor = Color.FromArgb(18, 176, 176);
+            //datagrid forrás beállítás
             DataTable dt = OperationsUtility.CreateDataTable();
             dataGridView1.DataSource = dt;
 
+            //TIMER beállítások
             timer1.Interval = 5000;
             timer1.Enabled = true;
 
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
 
+
+
+        //XML olvasó
         private void button1_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
@@ -41,12 +41,18 @@ namespace Project
             ds.WriteXml("test.xlsx");
         }
 
+
+        //CSV Export
         private void button2_Click(object sender, EventArgs e)
         {
             DataTable dt = OperationsUtility.CreateDataTable();
             dt.ToCSV("test2.csv");
         }
 
+
+
+
+        //TIMER
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(rnd.Next(1, 256), rnd.Next(1, 256), rnd.Next(1, 256));
