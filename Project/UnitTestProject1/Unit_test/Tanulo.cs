@@ -5,14 +5,14 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Project.Unit_test
+namespace UnitTestProject1.Unit_test
 {
-    public class Student
+    public class Tanulo
     {
         public string NeptunCode;
         public string Name;
         public int Age;
-        public Student(string name, int age, string neptun)
+        public Tanulo(string name, int age, string neptun)
         {
             Name = name;
             Age = age;
