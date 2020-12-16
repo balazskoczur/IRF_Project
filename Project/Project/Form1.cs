@@ -19,9 +19,12 @@ namespace Project
         {
             InitializeComponent();
             this.BackColor = Color.FromArgb(18, 176, 176);
+
+
             //datagrid forrás beállítás
             DataTable dt = OperationsUtility.CreateDataTable();
             dataGridView1.DataSource = dt;
+
 
             //TIMER beállítások
             timer1.Interval = 5000;
@@ -38,7 +41,7 @@ namespace Project
         {
             DataSet ds = new DataSet();
             ds.ReadXml("C:/Users/balaz/source/repos/IRF_Project/Project/Project/xml/dataDec-15-2020.xml");
-            ds.WriteXml("test.xlsx");
+            ds.WriteXml("test4.xml");
         }
 
 
@@ -46,7 +49,7 @@ namespace Project
         private void button2_Click(object sender, EventArgs e)
         {
             DataTable dt = OperationsUtility.CreateDataTable();
-            dt.ToCSV("test2.csv");
+            dt.ToCSV("test3");
         }
 
 

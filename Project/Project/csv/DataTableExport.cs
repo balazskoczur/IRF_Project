@@ -15,18 +15,18 @@ namespace Project.csv
             DataTable table = new DataTable();
             //columns  
             table.Columns.Add("ID", typeof(int));
-            table.Columns.Add("Név", typeof(string));
-            table.Columns.Add("Város", typeof(string));
+            table.Columns.Add("Name", typeof(string));
+            table.Columns.Add("City", typeof(string));
 
             //data  
-            table.Rows.Add(111, "Feri", "Budapest");
-            table.Rows.Add(222, "Józsi", "Budapest");
-            table.Rows.Add(102, "Roli", "Budapest");
-            table.Rows.Add(212, "Csanád", "Budapest");
-            table.Rows.Add(102, "Károly", "Budapest");
-            table.Rows.Add(212, "Bence", "Budapest");
-            table.Rows.Add(102, "Balázs", "Budapest");
-            table.Rows.Add(212, "Bálint", "Budapest");
+            table.Rows.Add(1, "Feri", "Budapest");
+            table.Rows.Add(2, "Jenci", "Budapest");
+            table.Rows.Add(3, "Roli", "Budapest");
+            table.Rows.Add(4, "Csani", "Budapest");
+            table.Rows.Add(5, "Karcsi", "Budapest");
+            table.Rows.Add(6, "Bence", "Budapest");
+            table.Rows.Add(7, "Bazsi", "Budapest");
+            table.Rows.Add(8, "Cecil", "Budapest");
 
             return table;
         }
