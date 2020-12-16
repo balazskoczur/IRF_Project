@@ -16,12 +16,9 @@ namespace Project
         public Form1()
         {
             InitializeComponent();
-            XmlTextReader reader = new XmlTextReader("dataDec-15-2020.xml");
-            while (reader.Read())
-            {
-                Console.WriteLine(reader.Name);
-            }
-            Console.ReadLine();
+            DataSet ds = new DataSet();
+            ds.ReadXml("C:/Users/balaz/source/repos/IRF_Project/Project/Project/xml/dataDec-15-2020.xml");
+            
         }
     }
 }
