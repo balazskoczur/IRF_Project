@@ -18,8 +18,8 @@ namespace Project
             InitializeComponent();
             DataSet ds = new DataSet();
             ds.ReadXml("C:/Users/balaz/source/repos/IRF_Project/Project/Project/xml/dataDec-15-2020.xml");
-            //ds.WriteXml("test.xml");
-            DataTable dt = new DataTable();
+            ds.WriteXml("test.xml");
+
             
 
         }
