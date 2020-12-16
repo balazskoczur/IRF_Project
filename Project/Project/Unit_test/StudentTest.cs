@@ -13,7 +13,7 @@ namespace Project.Unit_test
         [Fact]
         public void StudentTestSucces()
         {
-            
+            //Megadom a Unit testnek, hogy milyen értékeket vehet fel (jelen esetben Béla, 20, B1TM4N)
             string name = "Béla";
             int age = 20;
             string neptun = "B1TM4N";
@@ -25,7 +25,7 @@ namespace Project.Unit_test
         [Fact]
         public void StudentTestException()
         {
-            
+            //megnézem, hogy a student osztályban megadott szabályok alapján hibát dob-e, hogyha rossz a neptunkód
             Student student;
             Assert.Throws<ArgumentException>(() => student = new Student("Cecil", 42, "Cecil.42"));
         }
